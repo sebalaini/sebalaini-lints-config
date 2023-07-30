@@ -18,7 +18,23 @@ module.exports = {
       },
     ],
     yoda: ['error', 'never'],
-    "tailwindcss/no-custom-classname": 0
+    "tailwindcss/no-custom-classname": 0,
+    'prettier/prettier': [
+      'error',
+      {
+        "parser": "flow",
+        "printWidth": 10000,
+        "endOfLine": "lf",
+        "trailingComma": "es5",
+        "tabWidth": 2,
+        "semi": false,
+        "singleQuote": true,
+        "jsxSingleQuote": true,
+        "singleAttributePerLine": true,
+        "bracketSpacing": true,
+        "bracketSameLine": false
+      },
+    ],
   },
   env: {
     es2021: true,
