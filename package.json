@@ -1,0 +1,30 @@
+{
+  "name": "@sebalaini/eslint-config-main",
+  "version": "1.0.0",
+  "description": "Shared eslint configuration package with various base configurations which can be extended by your project's eslint configuration",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sebalaini/eslint-config-main"
+  },
+  "scripts": {
+    "publish-manual": "npm publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-next": "^13.4.8",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "stylelint": "^15.10.1",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^10.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.44.0",
+    "prettier": "2.8.8"
+  }
+}
