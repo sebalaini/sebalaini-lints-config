@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": ["plugin:prettier/recommended", "plugin:tailwindcss/recommended", "prettier"],
+  "extends": ["eslint-config-next", "plugin:prettier/recommended", "plugin:tailwindcss/recommended", "prettier"],
   "plugins": ["tailwindcss"],
   "rules": {
     'no-console': 'warn',
