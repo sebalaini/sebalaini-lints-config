@@ -16,7 +16,7 @@ This package is a complete lint configurations including `eslint`, `stylelint` &
 
 ## Usage
 
-The eslint configuration exported by default is Next.js specific and includes tailwind & scss lint.
+The eslint configuration exported by default is Next.js specific and includes TailwindCSS & scss lint.
 
 Extend these in your project's configuration file as needed.
 

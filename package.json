@@ -1,10 +1,10 @@
 {
-  "name": "@sebalaini/eslint-config-main",
+  "name": "sebalaini-lints-config",
   "version": "1.0.0",
-  "description": "Shared eslint configuration package with various base configurations which can be extended by your project's eslint configuration",
+  "description": "Shared lint configuration package with various base configurations which can be extended by your project's lints configurations",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sebalaini/eslint-config-main"
+    "url": "git@github.com:sebalaini/sebalaini-lints-config"
   },
   "scripts": {
     "publish-manual": "npm publish"
@@ -26,8 +26,8 @@
     "stylelint-config-standard-scss": "^10.0.0"
   },
   "peerDependencies": {
-    "eslint": "^8.44.0",
-    "prettier": "3.0.0",
-    "stylelint": "^15.10.1"
+    "eslint": ">=8.44",
+    "prettier": ">=3.0",
+    "stylelint": ">=15.10"
   }
 }
