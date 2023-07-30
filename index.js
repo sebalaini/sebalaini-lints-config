@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "plugin:tailwindcss/recommended", "prettier"],
+  "extends": ["plugin:prettier/recommended", "plugin:tailwindcss/recommended", "prettier"],
   "plugins": ["tailwindcss"],
   "rules": {
     'no-console': 'warn',
