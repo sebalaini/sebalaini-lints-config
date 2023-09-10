@@ -1,4 +1,4 @@
-import base from './index.js'
+const base = require('./index.js')
 
 module.exports = {
   extends: ['next', ...base.extends],
