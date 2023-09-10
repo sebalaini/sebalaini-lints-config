@@ -1,6 +1,10 @@
+import base from './index.js'
+
 module.exports = {
-  extends: ['next', './index.js'],
+  extends: ['next', ...base.extends],
+  plugins: [...base.plugins],
   rules: {
+    ...base.rules,
     '@next/next/no-html-link-for-pages': 'off',
     '@typescript-eslint/naming-convention': 'off',
     // This rule currently doesn't correctly support React server components
@@ -10,5 +14,8 @@ module.exports = {
     babelOptions: {
       presets: [require.resolve('next/babel')],
     },
+  },
+  env: {
+    ...base.env
   },
 }
