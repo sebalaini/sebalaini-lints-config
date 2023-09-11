@@ -10,10 +10,10 @@ module.exports = {
     ...base.rules,
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/naming-convention': [
-      'warn',
+      'error',
       {
-        format: ['camelCase'],
-        selector: ['variable', 'function'],
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
       },
     ],
     'no-unused-vars': 'off',
