@@ -1,6 +1,6 @@
 {
   "name": "sebalaini-lints-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared lint configuration package with various base configurations which can be extended by your project's lints configurations",
   "repository": {
     "type": "git",

@@ -9,6 +9,12 @@ module.exports = {
     '@typescript-eslint/naming-convention': 'off',
     // This rule currently doesn't correctly support React server components
     'react-hooks/rules-of-hooks': 'off',
+    'react/self-closing-comp': [
+      'error', {
+        'component': true,
+        'html': true
+      }
+    ]
   },
   parserOptions: {
     babelOptions: {
