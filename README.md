@@ -10,10 +10,6 @@ This package is a complete lint configurations including `eslint`, `stylelint` &
 
 ### package.json
 
-```json
-"sebalaini-lints-config": "git+https://sebalaini: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@github.com/sebalaini/sebalaini-lints-config.git",
-```
-
 ## Usage
 
 The eslint configuration exported by default is Next.js specific and includes TailwindCSS & scss lint.
