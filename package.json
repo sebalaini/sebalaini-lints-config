@@ -1,6 +1,6 @@
 {
   "name": "sebalaini-lints-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shared lint configuration package with various base configurations which can be extended by your project's lints configurations",
   "repository": {
     "type": "git",
@@ -30,10 +30,5 @@
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-standard-scss": "^11.0.0",
     "typescript": "^5.2.2"
-  },
-  "peerDependencies": {
-    "eslint": ">=8.50",
-    "prettier": ">=3.0",
-    "stylelint": ">=15.10"
   }
 }
