@@ -1,14 +1,14 @@
 module.exports = {
-  "extends": ["eslint-config-next", "plugin:prettier/recommended", "plugin:tailwindcss/recommended", "prettier"],
-  "plugins": ["tailwindcss"],
-  "rules": {
+  'extends': ['eslint-config-next', 'plugin:prettier/recommended', 'plugin:tailwindcss/recommended', 'prettier'],
+  'plugins': ['tailwindcss'],
+  'rules': {
     'no-console': 'warn',
-    "no-var": "error",
+    'no-var': 'error',
     'no-unused-vars': 'warn',
-    "prefer-const": [
-      "error", {
-        "destructuring": "any",
-        "ignoreReadBeforeAssign": false
+    'prefer-const': [
+      'error', {
+        'destructuring': 'any',
+        'ignoreReadBeforeAssign': false
       }
     ],
     camelcase: [
@@ -18,7 +18,7 @@ module.exports = {
       },
     ],
     yoda: ['error', 'never'],
-    "tailwindcss/no-custom-classname": 0,
+    'tailwindcss/no-custom-classname': 0,
   },
   env: {
     es2021: true,
