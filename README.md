@@ -4,11 +4,17 @@ Shared lint configuration package with various base configurations which can be 
 
 ## What this package is
 
-This package is a complete lint configurations including `eslint`, `stylelint` & `prettier`. These are the base configurations for linting JS code.
+This package is a complete lint configuration including `eslint`, `stylelint` & `prettier`. These are the base configurations for linting your code.
 
 ## Installation
 
-### package.json
+Simply install the repository as a package by running:
+
+```bash
+yarn add -D git+https://sebalaini@github.com/sebalaini/sebalaini-lints-config.git
+```
+
+In your `package.json` it should appear in your `devDependencies` as:
 
 ```json
 "sebalaini-lints-config": "git+https://sebalaini@github.com/sebalaini/sebalaini-lints-config.git",
@@ -16,9 +22,9 @@ This package is a complete lint configurations including `eslint`, `stylelint` &
 
 ## Usage
 
-The eslint configuration exported by default is Next.js specific and includes TailwindCSS & scss lint.
+The Eslint configuration exported by default is Next.js specific and includes TailwindCSS & SCSS lint.
 
-Extend these in your project's configuration file as needed.
+Extend these config in your project's configuration file as needed.
 
 ### Base
 
