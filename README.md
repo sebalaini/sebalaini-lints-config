@@ -1,3 +1,9 @@
+[![GitHub release](https://img.shields.io/github/release/sebalaini/sebalaini-lints-config?include_prereleases=&sort=semver&color=blue)](https://github.com/sebalaini/sebalaini-lints-config/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![issues - sebalaini-lints-config](https://img.shields.io/github/issues/sebalaini/sebalaini-lints-config)](https://github.com/sebalaini/sebalaini-lints-config/issues)
+
+<br>
+
 # sebalaini-lints-config
 
 Shared lint configuration package with various base configurations which can be extended by your project's `eslint`, `stylelint` & `prettier` configuration
@@ -63,3 +69,7 @@ module.exports = {
   ...require('@sebalaini/sebalaini-lints-config/prettierrc'),
 }
 ```
+
+## License
+
+Released under [MIT](/LICENSE) by [@sebalaini](https://github.com/sebalaini).
