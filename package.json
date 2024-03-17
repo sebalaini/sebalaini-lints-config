@@ -1,11 +1,12 @@
 {
-  "name": "sebalaini-lints-config",
+  "name": "@sebalaini/sebalaini-lints-config",
   "version": "1.0.6",
   "license": "MIT",
   "description": "Shared lint configuration package with various base configurations which can be extended by your project's lints configurations",
+  "author": "sebalaini",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sebalaini/sebalaini-lints-config"
+    "url": "git+ssh://git@github.com/sebalaini/sebalaini-lints-config.git"
   },
   "scripts": {
     "publish-manual": "npm publish"
@@ -31,5 +32,10 @@
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-standard-scss": "^13.0.0",
     "typescript": "^5.3.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/sebalaini/sebalaini-lints-config/issues"
+  },
+  "homepage": "https://github.com/sebalaini/sebalaini-lints-config#readme",
+  "devDependencies": {}
 }

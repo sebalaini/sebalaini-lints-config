@@ -10,17 +10,14 @@ This package is a complete lint configuration including `eslint`, `stylelint` & 
 
 ## Installation
 
-Simply install the repository as a package by running:
+Simply install the package by running:
 
 ```bash
-yarn add -D git+https://sebalaini@github.com/sebalaini/sebalaini-lints-config.git
+yarn add -D @sebalaini/sebalaini-lints-config
 ```
 
-In your `package.json` it should appear in your `devDependencies` as:
+alternatively you can use `npm` or your preferred package manager.
 
-```json
-"sebalaini-lints-config": "git+https://sebalaini@github.com/sebalaini/sebalaini-lints-config.git",
-```
 <br>
 
 ## Usage
@@ -34,13 +31,13 @@ The Eslint configuration exported by default includes `eslint-config-next` `pret
 Add the below code to your `.eslintrc.js` file.
 
 ```js
-extends: ['sebalaini-lints-config'],
+extends: ['@sebalaini/sebalaini-lints-config'],
 ```
 
 or 
 
 ```js
-extends: ['sebalaini-lints-config/next'],
+extends: ['@sebalaini/sebalaini-lints-config/next'],
 ```
 
 This config includes specific Next.js & TypeScript rules.
@@ -52,7 +49,7 @@ This config includes specific Next.js & TypeScript rules.
 Add the below code to your `.stylelintrc.js` file.
 
 ```js
-extends: ['sebalaini-lints-config/stylelintrc'],
+extends: ['@sebalaini/sebalaini-lints-config/stylelintrc'],
 ```
 
 <br>
@@ -63,6 +60,6 @@ Add the below code to your `.prettierrc.js` file.
 
 ```js
 module.exports = {
-  ...require('sebalaini-lints-config/prettierrc'),
+  ...require('@sebalaini/sebalaini-lints-config/prettierrc'),
 }
 ```
