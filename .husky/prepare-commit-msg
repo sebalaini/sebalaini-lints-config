@@ -1,1 +1,5 @@
-exec < /dev/tty && npx cz --hook || true
+# Check if current shell session is interactive to ensure the hook only runs locally.
+if [[ $- != *i* ]] 
+then 
+    exec < /dev/tty && npx cz --hook || true
+fi
