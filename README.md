@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 [![issues - sebalaini-lints-config](https://img.shields.io/github/issues/sebalaini/sebalaini-lints-config)](https://github.com/sebalaini/sebalaini-lints-config/issues)
 
-<br>
+---
 
 # sebalaini-lints-config
 
