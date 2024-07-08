@@ -1,4 +1,5 @@
 module.exports = {
+  'plugins': ['prettier-plugin-tailwindcss'],
   'parser': 'flow',
   'printWidth': 10000,
   'endOfLine': 'lf',
