@@ -1,7 +1,7 @@
 {
   "name": "@sebalaini/sebalaini-lints-config",
   "author": "sebalaini",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "license": "MIT",
   "description": "Shared lint configuration package with various base configurations which can be extended by your project's lints configurations",
   "repository": {

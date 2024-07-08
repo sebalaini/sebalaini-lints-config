@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sebalaini/sebalaini-lints-config/compare/v1.2.0...v1.3.0) (2024-07-08)
+
+
+### Features
+
+* **updates:** updates ([#9](https://github.com/sebalaini/sebalaini-lints-config/issues/9)) ([7824754](https://github.com/sebalaini/sebalaini-lints-config/commit/7824754c991623121da3e14d2ef4b4d3496f1101))
+
 # [1.2.0](https://github.com/sebalaini/sebalaini-lints-config/compare/v1.1.0...v1.2.0) (2024-04-28)
 
 
