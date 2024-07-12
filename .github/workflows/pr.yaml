@@ -6,24 +6,22 @@ on:
       - opened
       - synchronize
 
-permissions: write-all
-
 jobs:
   test-semantic-release:
     name: Release dry-run
     runs-on: ubuntu-latest
     steps:
-      - name: 📀 Checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
       
-      - name: 🖥️ Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
 
-      - name: 🔗 Install dependencies
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Branch out
