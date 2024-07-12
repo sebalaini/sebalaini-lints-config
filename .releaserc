@@ -2,7 +2,6 @@
   "branches": [
     "main"
   ],
-  "baseBranch": "main",
   "plugins": [
     [
     "@semantic-release/commit-analyzer",

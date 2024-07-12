@@ -3,5 +3,3 @@ if [[ $- != *i* ]]
 then 
     exec < /dev/tty && npx cz --hook || true
 fi
-
-# https://totaldebug.uk/posts/automated-release-with-semantic-release-and-commitizen/
