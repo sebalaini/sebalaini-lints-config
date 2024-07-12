@@ -42,7 +42,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
             GITHUB_REF=${{ github.head_ref }}
-            npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.ref_branch }} > output.txt
+            unset GITHUB_ACTIONS && npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.ref_branch }} > output.txt
             OUTPUT=$(cat output.txt | base64 -w 0)
             echo "::set-output name=releaseNote::$OUTPUT"
 
