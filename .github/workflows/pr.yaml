@@ -31,7 +31,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: unset GITHUB_ACTIONS && npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.ref_branch }}
+        run: unset GITHUB_ACTIONS && npx semantic-release-github-pr --branches main, ${{ steps.branch-name.outputs.ref_branch }}
 
       # - name: 🔬 Check semantic versioning
       #   id: semantic-release
