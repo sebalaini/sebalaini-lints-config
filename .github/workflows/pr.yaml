@@ -24,12 +24,11 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Get branch name
-        id: branch-name
-        uses: tj-actions/branch-names@v7
+      - run: git checkout -b ${{ github.head_ref }}
+      - run: unset GITHUB_ACTIONS && npx semantic-release-github-pr
 
-      - name: Dry run
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.head_ref_branch }}
+      # - name: Dry run
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #   run: npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.ref_branch }}
