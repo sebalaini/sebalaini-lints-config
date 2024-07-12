@@ -26,8 +26,8 @@ jobs:
       - name: 🔗 Install dependencies
         run: yarn install --frozen-lockfile
 
-      # - name: Dry run
-      #   run: git checkout -b ${{ github.head_ref }}
+      - name: Branch out
+        run: git checkout -b ${{ github.head_ref }}
 
       # - name: Dry run
       #   env:
@@ -39,7 +39,7 @@ jobs:
         id: semantic-release
         run: |
             GITHUB_REF=${{ github.head_ref }}
-            npx semantic-release --no-ci --dry-run --branches ${{ github.head_ref }} > output.txt
+            npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.ref_branch }} > output.txt
             OUTPUT=$(cat output.txt | base64 -w 0)
             echo "::set-output name=releaseNote::$OUTPUT"
 
