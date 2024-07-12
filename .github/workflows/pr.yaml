@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # - name: Branch out
-      #   run: git checkout -b ${{ github.head_ref }}
+      - name: Branch out
+        run: git checkout ${{ github.head_ref }}
 
       - name: Dry run
         env:
