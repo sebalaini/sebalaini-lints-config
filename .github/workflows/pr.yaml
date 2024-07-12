@@ -6,6 +6,8 @@ on:
       - opened
       - synchronize
 
+permissions: write-all
+
 jobs:
   test-semantic-release:
     name: Release dry-run
