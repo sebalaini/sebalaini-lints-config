@@ -28,4 +28,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: unset GITHUB_ACTIONS && npx semantic-release-github-pr --branches task/*
+        run: unset GITHUB_ACTIONS && npx semantic-release-github-pr --branches main, $GITHUB_HEAD_REF
