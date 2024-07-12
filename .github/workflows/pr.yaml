@@ -24,8 +24,12 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v7
+
       - name: Dry run
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release-github-pr --branches {{ $GITHUB_REF_NAME }}
+        run: npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.current_branch }}
