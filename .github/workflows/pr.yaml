@@ -24,11 +24,12 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Branch out
-        run: git checkout -b ${{ github.head_ref }}
+      # - name: Branch out
+      #   run: git checkout -b ${{ github.head_ref }}
 
       - name: Dry run
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: unset GITHUB_ACTIONS && npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.ref_branch }}
+        # run: unset GITHUB_ACTIONS && npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.ref_branch }}
+        run: unset GITHUB_ACTIONS && npx semantic-release-github-pr --branches ${{ github.head_ref }}
