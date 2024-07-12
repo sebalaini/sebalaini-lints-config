@@ -37,6 +37,9 @@ jobs:
 
       - name: 🔬 Check semantic versioning
         id: semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
             GITHUB_REF=${{ github.head_ref }}
             npx semantic-release-github-pr --branches ${{ steps.branch-name.outputs.ref_branch }} > output.txt
