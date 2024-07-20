@@ -31,8 +31,8 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: yarn changeset version
-          version: yarn changeset publish
+          publish: yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}" && yarn changeset version
+          version: yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}" && yarn changeset publish
           commit: "chore: new release"
           title: "chore: new release candidate"
         env:
