@@ -27,12 +27,15 @@ jobs:
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Set token
+        run: yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}"
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}" && yarn changeset publish
-          version: yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}" && yarn changeset version
+          publish: yarn changeset publish
+          version: yarn changeset version
           commit: "chore: new release"
           title: "chore: new release candidate"
         env:
