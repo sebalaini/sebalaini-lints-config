@@ -14,8 +14,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "publish-manual": "npm publish",
-    "prepare": "husky || true"
+    "publish-manual": "npm publish"
   },
   "publishConfig": {
     "access": "public"
