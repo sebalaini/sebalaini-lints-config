@@ -1,5 +1,12 @@
 # @sebalaini/sebalaini-lints-config
 
+## 1.4.2
+
+### Patch Changes
+
+- d86078a: switch to changeset
+- 9b5ec48: update README
+
 ## 1.4.0
 
 ### Major Changes
