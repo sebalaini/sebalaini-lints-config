@@ -70,6 +70,8 @@ module.exports = {
 }
 ```
 
+--- 
+
 ## License
 
 Released under [MIT](/LICENSE) by [@sebalaini](https://github.com/sebalaini).
