@@ -75,3 +75,9 @@ module.exports = {
 ## License
 
 Released under [MIT](/LICENSE) by [@sebalaini](https://github.com/sebalaini).
+
+---
+
+# Create a release
+
+Run `yarn changeset` to add a new release.
