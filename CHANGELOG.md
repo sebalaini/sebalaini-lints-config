@@ -1,5 +1,11 @@
 # @sebalaini/sebalaini-lints-config
 
+## 1.4.3
+
+### Patch Changes
+
+- 26accf0: update dependencies
+
 ## 1.4.2
 
 ### Patch Changes
